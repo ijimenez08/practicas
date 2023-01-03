@@ -1,0 +1,17 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pinncel = pantalla.getContext("2d");
+
+    pinncel.fillStyle="grey";
+    pinncel.fillRect(0,0,600,400);
+    
+    function esxibirAlerta(evento) 
+    {
+        console.log(evento);
+        alert("Usted hizo un clic");
+
+    }
+    pantalla.onclick = esxibirAlerta;
+</script>

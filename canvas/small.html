@@ -1,0 +1,18 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    function dibujarcuadrosVerdes(x,y, color)
+    {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle= color;
+        pincel.fillRect(x,y,50,50);
+        pincel.strokeStyle="black";
+        pincel.strokeRect(x,y,50,50);
+    
+    }
+
+    dibujarcuadrosVerdes(0,0,"red");
+    dibujarcuadrosVerdes(0,50,"blue");
+    dibujarcuadrosVerdes(0,100,"skyblue");
+</script>
